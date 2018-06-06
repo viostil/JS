@@ -1,0 +1,76 @@
+<style>
+    body {
+        font-family: monospace;
+    }
+</style>
+
+<script>
+
+///////// Triunghi descrestere /////////
+var c=1;
+var x="#";
+while(c<=5){
+      document.write(x + "<br>");
+  x = x+"#";
+  c++;
+}
+
+  document.write('<br><br><br>');
+
+/////////// T O R T //////////////
+    var r=1;
+///////BIG-START//////////////////////
+////////// Flacara ////////////////
+          var col = 1;
+          while (col <= 8 ) {
+            document.write("&nbsp");
+              if( col==3 || col==4 || col==5){
+              document.write("^");
+          }
+              col++
+          }
+            document.write('<br>');
+    ///////// Luminarile ///////////////
+    var col = 1;
+    while (col <= 8 ) {
+    document.write("&nbsp");
+      if( col==3 || col==4 || col==5){
+      document.write("|");
+    }
+      col++
+    }
+    document.write('<br>');
+    ////////// Etaj 2 ////////////////
+    var r=1;
+    while(r <=2){
+    var col = 1;
+    while (col <= 11 ) {
+      if( col>=3 && col<=9 ){
+      document.write("*");}
+      else{
+      document.write("&nbsp");
+    }
+      col++
+    }
+    document.write('<br>');
+    r++;
+  }
+
+    ////////// Etaj 1 ////////////////
+    var r=1;
+    while(r <=2){
+    var col = 1;
+    while (col <= 11 ) {
+      if( col>=1 && col<=11 ){
+      document.write("*");}
+      else{
+      document.write("&nbsp");
+    }
+      col++
+    }
+    document.write('<br>');
+    r++;
+  }
+    //////// Finish ///////////////
+
+</script>
